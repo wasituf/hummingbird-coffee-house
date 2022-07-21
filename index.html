@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Simple Tailwind Starter</title>
+  </head>
+  <body class="box-border">
+    <!-- Nav Container -->
+    <nav class="container px-8 pt-4 mx-auto">
+      <div
+        class="flex flex-col space-y-6 items-center justify-between mb-84 md:flex-row md:space-y-0 md:mb-16"
+      >
+        <!-- Logo -->
+        <img src="img/logo.svg" alt="logo" />
+
+        <!-- Nav Menu -->
+        <div
+          class="flex flex-row space-x-4 justify-center items-center font-monts font-medium text-base text-lightBrown"
+        >
+          <a class="current" href="#">Home</a>
+          <a class="" href="#">About</a>
+          <a class="" href="#">Menu</a>
+          <a class="" href="#">Contact</a>
+        </div>
+
+        <!-- Phone Number -->
+        <div
+          class="hidden md:flex md:flex-row md:space-x-1 md:justify-end md:items-center"
+        >
+          <img src="img/phone-icon-brown.svg" alt="" />
+          <div class="font-monts font-medium text-base text-lightBrown">
+            (+1) 213 555 0150
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="container px-8 mx-auto">
+      <div class="relative mb-16">
+        <!-- Hero Text -->
+        <h1
+          class="text-darkBrown text-4xl text-center font-playfair font-bold tracking-wide leading-tight mb-4 md:leading-tight md:text-left lg:text-7xl"
+        >
+          Life Is Too Short<br />For Bad Coffee.
+        </h1>
+
+        <!-- Lead -->
+        <p
+          class="text-darkBrown text-xl text-center font-monts font-light leading-tight mb-4 md:text-left lg:text-2xl"
+        >
+          Boost your productivity and enjoy your<br />mornings with the perfect
+          cup of coffee.
+        </p>
+
+        <!-- CTA -->
+        <a
+          href="#"
+          class="block bg-darkBrown text-white text-xl text-center font-monts font-medium shadow-lg shadow-black/50 mx-auto mb-4 py-2 max-w-xs md:inline-block md:m-auto md:px-8 md:mr-6"
+          >Try it now</a
+        >
+
+        <!-- Secondary CTA -->
+        <a
+          href="#"
+          class="block text-darkBrown text-xl text-center font-monts font-medium border-2 border-darkBrown mx-auto mb-4 py-1.5 max-w-xs md:inline-block md:m-auto md:px-6"
+          >See our menu</a
+        >
+
+        <!-- Hero Image -->
+        <img
+          src="img/hero.jpg"
+          alt=""
+          class="absolute border-8 border-white max-h-80 -top-81 right-1/2 transform translate-x-1/2 z-10 md:max-h-md md:-top-10 md:right-0 md:translate-x-0 lg:max-h-lg"
+        />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="bg-darkBrown">
+      <div class="relative container px-8 pt-96 mx-auto md:pt-40 lg:pt-60">
+        <h3
+          class="text-white text-center text-3xl font-playfair font-bold tracking-wider pb-4 md:pb-64 md:ml-32 lg:pb-88"
+        >
+          About Us
+        </h3>
+        <p
+          class="line-clamp-10 text-white text-justify text-base font-monts font-light leading-normal max-w-md mx-auto md:absolute md:right-16 md:top-52 md:max-w-xs md:line-clamp-8 lg:line-clamp-10 lg:text-xl lg:max-w-md lg:top-72 lg:right-24"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ad
+          consequatur doloremque quod quasi? Dicta harum id tenetur iste quis.
+          Enim facilis praesentium quos, aliquam illum distinctio minus incidunt
+          delectus perferendis corporis dignissimos placeat laborum eveniet nisi
+          sequi ad sunt. Molestiae pariatur ab vero soluta quasi animi
+          aspernatur voluptates repellendus officiis aliquam, ad quibusdam
+          omnis. Nesciunt, veniam et accusamus exercitationem dolorem placeat
+          esse maiores quaerat pariatur adipisci, sapiente aliquid dolore minus
+          quas inventore, eius ex?
+        </p>
+
+        <!-- About Image -->
+        <img
+          src="img/about-us.jpg"
+          alt=""
+          class="absolute border-8 border-white max-h-80 top-10 left-1/2 transform -translate-x-1/2 z-10 md:max-h-md md:top-36 md:left-7 md:translate-x-0 lg:max-h-lg lg:top-52"
+        />
+      </div>
+    </section>
+  </body>
+</html>
