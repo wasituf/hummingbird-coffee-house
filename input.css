@@ -33,3 +33,21 @@ nav {
   content: '';
   @apply absolute bg-darkBrown/50 top-0 bottom-0 left-0 right-0 -z-10;
 }
+
+section {
+  scroll-margin-top: 100px;
+}
+
+@media (max-width: 640px) {
+  #about {
+    scroll-margin-top: 200px;
+  }
+
+  #visit-us {
+    scroll-margin-top: 200px;
+  }
+
+  #menu {
+    scroll-margin-top: 200px;
+  }
+}

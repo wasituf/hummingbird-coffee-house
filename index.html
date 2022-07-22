@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,7 +19,7 @@
     <script src="index.js" defer></script>
     <title>Simple Tailwind Starter</title>
   </head>
-  <body class="box-border">
+  <body id="body" class="box-border">
     <!-- Nav Container -->
     <nav class="sticky top-0 pt-4 z-40">
       <div
@@ -37,10 +37,10 @@
         <div
           class="flex flex-row space-x-4 justify-center items-center font-monts font-medium text-base text-lightBrown transition-all"
         >
-          <a class="current" href="#">Home</a>
-          <a class="" href="#">About</a>
-          <a class="" href="#">Menu</a>
-          <a class="" href="#">Contact</a>
+          <a id="home-btn" class="current nav-btn" href="#body">Home</a>
+          <a id="about-btn" class="nav-btn" href="#about">About</a>
+          <a id="menu-btn" class="nav-btn" href="#menu">Menu</a>
+          <a id="contact-btn" class="nav-btn" href="#contact">Contact</a>
         </div>
 
         <!-- Phone Number -->
@@ -75,15 +75,15 @@
 
         <!-- CTA -->
         <a
-          href="#"
-          class="block bg-darkBrown text-white text-xl text-center font-monts font-medium shadow-lg shadow-black/50 mx-auto mb-4 py-2 max-w-xs md:inline-block md:m-auto md:px-8 md:mr-6"
+          href="#visit-us"
+          class="block bg-darkBrown text-white text-xl text-center font-monts font-medium shadow-lg shadow-black/50 mx-auto mb-4 py-2 max-w-xs transition-transform duration-100 hover:scale-105 md:inline-block md:m-auto md:px-8 md:mr-6"
           >Try it now</a
         >
 
         <!-- Secondary CTA -->
         <a
-          href="#"
-          class="block text-darkBrown text-xl text-center font-monts font-medium border-2 border-darkBrown mx-auto mb-4 py-1.5 max-w-xs md:inline-block md:m-auto md:px-6"
+          href="#menu"
+          class="block text-darkBrown text-xl text-center font-monts font-medium border-2 border-darkBrown mx-auto mb-4 py-1.5 max-w-xs transition-transform duration-100 hover:scale-105 md:inline-block md:m-auto md:px-6"
           >See our menu</a
         >
 
@@ -432,7 +432,7 @@
           ></textarea>
 
           <input
-            class="text-white text-xl border-2 border-white w-full py-1.5 font-monts font-bold cursor-pointer"
+            class="text-white text-xl border-2 border-white w-full py-1.5 font-monts font-bold cursor-pointer transition-transform duration-100 hover:scale-105"
             type="submit"
             value="Send Message"
           />
@@ -450,7 +450,9 @@
         </h3>
         <div class="flex flex-row items-center justify-center space-x-3 mb-4">
           <img src="img/address-icon-dark.svg" alt="" />
-          <p class="text-darkBrown text-xl font-monts font-bold tracking-wide">
+          <p
+            class="text-darkBrown text-lg font-monts font-bold tracking-wide md:text-xl"
+          >
             2601 Evergreen Lane, Los Angeles, CA
           </p>
         </div>
