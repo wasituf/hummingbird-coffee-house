@@ -8,21 +8,34 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Playfair+Display:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="index.js" defer></script>
     <title>Simple Tailwind Starter</title>
   </head>
   <body class="box-border">
     <!-- Nav Container -->
-    <nav class="container px-8 pt-4 mx-auto">
+    <nav class="sticky top-0 pt-4 z-40">
       <div
-        class="flex flex-col space-y-6 items-center justify-between mb-84 md:flex-row md:space-y-0 md:mb-16"
+        class="container flex flex-col space-y-6 items-center justify-between pb-2 px-8 mb-84 mx-auto md:flex-row md:space-y-0 md:mb-16 md:pb-4"
       >
         <!-- Logo -->
-        <img src="img/logo.svg" alt="logo" />
+        <img
+          id="nav-logo"
+          class="max-h-28 transition-all duration-200"
+          src="img/logo.svg"
+          alt="logo"
+        />
 
         <!-- Nav Menu -->
         <div
-          class="flex flex-row space-x-4 justify-center items-center font-monts font-medium text-base text-lightBrown"
+          class="flex flex-row space-x-4 justify-center items-center font-monts font-medium text-base text-lightBrown transition-all"
         >
           <a class="current" href="#">Home</a>
           <a class="" href="#">About</a>
@@ -43,7 +56,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="container px-8 mx-auto">
+    <section id="home" class="container px-8 mx-auto">
       <div class="relative mb-16">
         <!-- Hero Text -->
         <h1
@@ -84,15 +97,17 @@
     </section>
 
     <!-- About Section -->
-    <section class="bg-darkBrown">
-      <div class="relative container px-8 pt-96 mx-auto md:pt-40 lg:pt-60">
+    <section id="about" class="bg-darkBrown mb-16 md:mb-48">
+      <div
+        class="relative container px-8 pt-96 pb-10 mx-auto md:pt-40 md:pb-0 lg:pt-60"
+      >
         <h3
-          class="text-white text-center text-3xl font-playfair font-bold tracking-wider pb-4 md:pb-64 md:ml-32 lg:pb-88"
+          class="text-white text-center text-3xl font-playfair font-bold tracking-wider pb-4 md:pb-64 md:ml-52 lg:pb-96 lg:text-5xl"
         >
           About Us
         </h3>
         <p
-          class="line-clamp-10 text-white text-justify text-base font-monts font-light leading-normal max-w-md mx-auto md:absolute md:right-16 md:top-52 md:max-w-xs md:line-clamp-8 lg:line-clamp-10 lg:text-xl lg:max-w-md lg:top-72 lg:right-24"
+          class="line-clamp-10 text-white text-justify text-base font-monts font-light leading-normal max-w-md mx-auto md:absolute md:right-16 md:top-52 md:max-w-xs md:line-clamp-8 lg:line-clamp-10 lg:text-xl lg:max-w-md lg:top-80 lg:right-24"
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ad
           consequatur doloremque quod quasi? Dicta harum id tenetur iste quis.
@@ -113,5 +128,386 @@
         />
       </div>
     </section>
+
+    <!-- Menu -->
+    <section id="menu" class="mb-16">
+      <div class="container px-8 mx-auto">
+        <h3
+          class="text-darkBrown text-center text-3xl font-playfair font-bold tracking-wider mb-10 md:text-start lg:text-5xl"
+        >
+          Our Menu
+        </h3>
+
+        <!-- Menu Card -->
+        <div id="menu-card" class="container py-8">
+          <img src="img/logo-light.svg" alt="" class="mx-auto mb-6" />
+          <div
+            class="flex flex-col justify-between space-y-10 px-10 max-w-full lg:flex-row lg:space-y-0 lg:space-x-20"
+          >
+            <!-- Hot -->
+            <div class="w-full">
+              <div class="flex flex-row justify-between items-end">
+                <h2
+                  class="text-white text-2xl font-playfair font-bold md:text-3xl"
+                >
+                  Hot
+                </h2>
+                <h2
+                  class="text-white text-xl font-monts font-medium mr-4 md:text-2xl"
+                >
+                  $
+                </h2>
+              </div>
+
+              <hr class="border-b-2 border-white my-2" />
+
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  Americano
+                </p>
+                <p class="text-white text-xl font-monts font-base">4.00</p>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  espresso
+                </p>
+                <p class="text-white text-xl font-monts font-base">4.50</p>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  cappuccino
+                </p>
+                <p class="text-white text-xl font-monts font-base">4.99</p>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  cafe latte
+                </p>
+                <p class="text-white text-xl font-monts font-base">4.00</p>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  doppio
+                </p>
+                <p class="text-white text-xl font-monts font-base">4.50</p>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  latte macchiato
+                </p>
+                <p class="text-white text-xl font-monts font-base">4.99</p>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  long black
+                </p>
+                <p class="text-white text-xl font-monts font-base">4.00</p>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  hot chocolate
+                </p>
+                <p class="text-white text-xl font-monts font-base">5.99</p>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  caramel macchiato
+                </p>
+                <p class="text-white text-xl font-monts font-base">4.99</p>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  dripp coffee
+                </p>
+                <p class="text-white text-xl font-monts font-base">4.00</p>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  white chocolate
+                </p>
+                <p class="text-white text-xl font-monts font-base">5.99</p>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  hot tea
+                </p>
+                <p class="text-white text-xl font-monts font-base">4.00</p>
+              </div>
+            </div>
+            <!-- Cold -->
+            <div class="w-full">
+              <div class="flex flex-row justify-between items-end">
+                <h2
+                  class="text-white text-2xl font-playfair font-bold md:text-3xl"
+                >
+                  Cold
+                </h2>
+                <h2
+                  class="text-white text-xl font-monts font-medium mr-4 md:text-2xl"
+                >
+                  $
+                </h2>
+              </div>
+
+              <hr class="border-b-2 border-white my-2" />
+
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  cafe frappe
+                </p>
+                <p class="text-white text-xl font-monts font-base">4.50</p>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  smoothie
+                </p>
+                <p class="text-white text-xl font-monts font-base">4.99</p>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  iced latte
+                </p>
+                <p class="text-white text-xl font-monts font-base">4.50</p>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  choc mint
+                </p>
+                <p class="text-white text-xl font-monts font-base">5.50</p>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  oreo cappuccino
+                </p>
+                <p class="text-white text-xl font-monts font-base">5.50</p>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  cappuccino
+                </p>
+                <p class="text-white text-xl font-monts font-base">4.99</p>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  moca
+                </p>
+                <p class="text-white text-xl font-monts font-base">5.50</p>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  iced mocha
+                </p>
+                <p class="text-white text-xl font-monts font-base">4.99</p>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  iced macchiato
+                </p>
+                <p class="text-white text-xl font-monts font-base">5.50</p>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  frozen mocha
+                </p>
+                <p class="text-white text-xl font-monts font-base">5.99</p>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  frozen latte
+                </p>
+                <p class="text-white text-xl font-monts font-base">5.50</p>
+              </div>
+            </div>
+            <!-- Dessert -->
+            <div class="w-full">
+              <div class="flex flex-row justify-between items-end">
+                <h2
+                  class="text-white text-2xl font-playfair font-bold md:text-3xl"
+                >
+                  Dessert
+                </h2>
+                <h2
+                  class="text-white text-xl font-monts font-medium mr-4 md:text-2xl"
+                >
+                  $
+                </h2>
+              </div>
+
+              <hr class="border-b-2 border-white my-2" />
+
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  ice cream
+                </p>
+                <p class="text-white text-xl font-monts font-base">7.50</p>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  dessert nachos
+                </p>
+                <p class="text-white text-xl font-monts font-base">5.99</p>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  apple pie
+                </p>
+                <p class="text-white text-xl font-monts font-base">6.99</p>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  triple chocolate
+                </p>
+                <p class="text-white text-xl font-monts font-base">6.50</p>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  cheesecake
+                </p>
+                <p class="text-white text-xl font-monts font-base">7.99</p>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  tiramisu
+                </p>
+                <p class="text-white text-xl font-monts font-base">7.50</p>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  meringue cheesecake
+                </p>
+                <p class="text-white text-xl font-monts font-base">8.50</p>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  warm apple pie
+                </p>
+                <p class="text-white text-xl font-monts font-base">7.50</p>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  sorbet
+                </p>
+                <p class="text-white text-xl font-monts font-base">5.99</p>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  banana foster pie
+                </p>
+                <p class="text-white text-xl font-monts font-base">6.50</p>
+              </div>
+              <div class="flex flex-row justify-between items-center">
+                <p class="text-white text-xl font-monts italic capitalize">
+                  chocolate fondue
+                </p>
+                <p class="text-white text-xl font-monts font-base">7.50</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mb-16">
+      <div class="container px-8 py-10 mx-auto">
+        <h3
+          class="text-white text-center text-3xl font-playfair font-bold tracking-wider pb-10 md:text-start lg:text-5xl"
+        >
+          Contact Us
+        </h3>
+
+        <form>
+          <input
+            type="text"
+            placeholder="Subject..."
+            class="bg-white text-darkBrown text-lg font-monts font-base placeholder-lightBrown placeholder:italic py-1.5 px-4 w-full focus:outline-none mb-4"
+          />
+
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Message..."
+            rows="8"
+            class="bg-white text-darkBrown text-lg font-monts font-base placeholder-lightBrown placeholder:italic py-1 5 px-4 mb-4 w-full focus:outline-none"
+          ></textarea>
+
+          <input
+            class="text-white text-xl border-2 border-white w-full py-1.5 font-monts font-bold cursor-pointer"
+            type="submit"
+            value="Send Message"
+          />
+        </form>
+      </div>
+    </section>
+
+    <!-- Visit Us -->
+    <section id="visit-us" class="mb-16">
+      <div class="container px-8 mx-auto">
+        <h3
+          class="text-lightBrown text-center text-3xl font-playfair font-bold tracking-wider mb-6 md:text-start lg:text-5xl"
+        >
+          Visit Our Shop
+        </h3>
+        <div class="flex flex-row items-center justify-center space-x-3 mb-4">
+          <img src="img/address-icon-dark.svg" alt="" />
+          <p class="text-darkBrown text-xl font-monts font-bold tracking-wide">
+            2601 Evergreen Lane, Los Angeles, CA
+          </p>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d105757.63348892446!2d-118.34932187470773!3d34.071409983880685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1slos angeles coffee shops!5e0!3m2!1sen!2sbd!4v1658334056255!5m2!1sen!2sbd"
+          class="min-w-full h-80 md:h-88 lg:h-96"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-darkBrown py-10">
+      <!-- Footer Container -->
+      <div class="container px-8 mx-auto">
+        <div
+          class="flex flex-col justify-center items-center space-y-6 mb-8 md:flex-row md:space-y-0 md:justify-between"
+        >
+          <img src="img/logo-light.svg" alt="" />
+          <div
+            class="flex flex-row justify-center items-center space-x-6 text-white"
+          >
+            <i class="fa-brands fa-facebook-square fa-2x"></i>
+            <i class="fa-brands fa-instagram fa-2x"></i>
+            <i class="fa-brands fa-twitter-square fa-2x"></i>
+            <i class="fa-brands fa-linkedin fa-2x"></i>
+          </div>
+          <div class="space-y-3">
+            <div
+              class="flex flex-row justify-center items-center space-x-3 md:justify-end"
+            >
+              <p class="text-white text-base font-monts font-medium">
+                (+1) 213 555 0150
+              </p>
+              <img class="max-h-6" src="img/phone-icon-light.svg" alt="" />
+            </div>
+            <div
+              class="flex flex-row justify-center items-center space-x-3 md:justify-end"
+            >
+              <p class="text-white text-base text-end font-monts font-medium">
+                2601 Evergreen Lane,<br />Los Angeles, California
+              </p>
+              <img src="img/address-icon-light.svg" alt="" class="max-h-6" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <p
+          class="text-white text-sm text-center font-monts font-medium capitalize"
+        >
+          &copy; all rights reserved hummingbird coffee house &trade;
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

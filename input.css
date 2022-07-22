@@ -6,13 +6,30 @@
   @apply text-darkBrown;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-body::-webkit-scrollbar {
-  display: none;
+body {
+  background: url('../img/bg.png') center / cover;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
-body {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+nav {
+  background: url('../img/nav-bg.png') no-repeat center / cover;
+}
+
+#menu-card {
+  background: url('../img/menu-bg.jpg') no-repeat center / cover;
+  @apply relative -z-20;
+}
+
+#menu-card::before {
+  content: '';
+  @apply absolute bg-[#150900]/70 top-0 bottom-0 left-0 right-0 -z-10;
+}
+
+#contact {
+  background: url('../img/contact-bg.jpg') no-repeat center / cover;
+  @apply relative z-20;
+}
+
+#contact::before {
+  content: '';
+  @apply absolute bg-darkBrown/50 top-0 bottom-0 left-0 right-0 -z-10;
 }
