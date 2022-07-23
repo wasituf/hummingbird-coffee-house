@@ -1037,10 +1037,6 @@ video {
   transition-duration: 200ms;
 }
 
-.duration-150 {
-  transition-duration: 150ms;
-}
-
 .duration-100 {
   transition-duration: 100ms;
 }
@@ -1053,8 +1049,7 @@ video {
 }
 
 .current {
-  --tw-text-opacity: 1;
-  color: rgb(41 15 0 / var(--tw-text-opacity));
+  color: #290f00;
 }
 
 body {

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .current {
-  @apply text-darkBrown;
+  color: #290f00;
 }
 
 body {
