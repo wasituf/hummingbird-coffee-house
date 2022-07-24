@@ -1061,7 +1061,8 @@ nav {
 }
 
 #menu-card {
-  background: url('../img/menu-bg.jpg') no-repeat center / cover;
+  background: url('https://res.cloudinary.com/wasituf/image/upload/c_scale,w_1080/v1658650704/hummingbird-coffee-house/menu-bg_qkafiq.jpg')
+    no-repeat center / cover;
   position: relative;
   z-index: -20;
 }
@@ -1078,7 +1079,8 @@ nav {
 }
 
 #contact {
-  background: url('../img/contact-bg.jpg') no-repeat center / cover;
+  background: url('https://res.cloudinary.com/wasituf/image/upload/c_scale,h_522,q_auto/v1658650706/hummingbird-coffee-house/contact-bg_dgtthb.jpg')
+    no-repeat center / cover;
   position: relative;
   z-index: 20;
 }
