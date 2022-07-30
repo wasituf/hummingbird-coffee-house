@@ -7,11 +7,13 @@
 }
 
 body {
-  background: url('../img/bg.png') center / cover;
+  background: url('https://res.cloudinary.com/wasituf/image/upload/q_50/v1658650705/hummingbird-coffee-house/bg_rgj8xq.png')
+    center / cover;
 }
 
 nav {
-  background: url('../img/nav-bg.png') no-repeat center / cover;
+  background: url('https://res.cloudinary.com/wasituf/image/upload/c_crop,h_200,w_2000/v1658650704/hummingbird-coffee-house/nav-bg_q91cqn.png')
+    no-repeat center / cover;
 }
 
 #menu-card {
